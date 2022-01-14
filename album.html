@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My photo album</title>
+    <style>
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .photo-frame {
+            width: 400px;
+            height: 225px;
+            border: 2px solid peru;
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .photo-frame:hover .photo {
+            transform: scale(150%);
+            transition: transform 3s ease-in-out;
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .photo-detail {
+            display: none;
+            position: absolute;
+            width: 400px;
+            top: 0;
+            transition: transform 9s ease-in;
+        }
+
+        .photo-detail:hover {
+            transform: translateY(-230px);
+        }
+
+        .photo-detail h3 {
+            background-color: black;
+            text-align: center;
+        }
+
+        .photo-frame:hover .photo-detail {
+            display: block;
+            background-color: rgba(255, 0, 0, 0.192);
+            padding-top: 0px;
+            color: wheat;
+        }
+
+        p {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My photo album</h1>
+    <section>
+        <h3>Dibas photo</h3>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="assets/IMG-20211216-WA0063-01.jpeg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Diba</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit maxime? Deleniti quos
+                        odit debitis nesciunt mollitia dolorum! Beatae expedita animi excepturi, rerum odio voluptatem?
+                        Molestias quisquam sed tenetur minus?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="assets/IMG-20211216-WA0063-01.jpeg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Diba</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit maxime? Deleniti quos
+                        odit debitis nesciunt mollitia dolorum! Beatae expedita animi excepturi, rerum odio voluptatem?
+                        Molestias quisquam sed tenetur minus?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="assets/IMG-20211216-WA0063-01.jpeg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Diba</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit maxime? Deleniti quos
+                        odit debitis nesciunt mollitia dolorum! Beatae expedita animi excepturi, rerum odio voluptatem?
+                        Molestias quisquam sed tenetur minus?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="assets/IMG-20211216-WA0063-01.jpeg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Diba</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit maxime? Deleniti quos
+                        odit debitis nesciunt mollitia dolorum! Beatae expedita animi excepturi, rerum odio voluptatem?
+                        Molestias quisquam sed tenetur minus?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="assets/IMG-20211216-WA0063-01.jpeg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Diba</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit maxime? Deleniti quos
+                        odit debitis nesciunt mollitia dolorum! Beatae expedita animi excepturi, rerum odio voluptatem?
+                        Molestias quisquam sed tenetur minus?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="assets/IMG-20211216-WA0063-01.jpeg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Diba</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit maxime? Deleniti quos
+                        odit debitis nesciunt mollitia dolorum! Beatae expedita animi excepturi, rerum odio voluptatem?
+                        Molestias quisquam sed tenetur minus?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
